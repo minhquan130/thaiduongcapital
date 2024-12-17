@@ -2,21 +2,24 @@ import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Navigation from "./Navigation";
 import MobileMenu from "./MobileMenu";
-import Logoimage from "../../assets/images/logo.jpg";
+import Logoimage from "../../assets/images/logo.png";
+import { Link } from "react-router-dom";
 
 const MainHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div className="bg-white shadow-md overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container mx-auto px-6">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <img src={Logoimage} alt="" />
-            <span className="hidden ml-2 text-xl font-bold text-gray-800">
-              Thái Dương Capital
-            </span>
+            <Link to={''}>
+              <img src={Logoimage} alt="logo"/>
+              <span className="hidden ml-2 text-xl font-bold text-gray-800">
+                Thái Dương Capital
+              </span>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}
@@ -39,7 +42,7 @@ const MainHeader = () => {
       </div>
 
       {/* Mobile menu */}
-      {isMenuOpen && <MobileMenu />}
+      {isMenuOpen && <MobileMenu isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen}/>}
     </div>
   );
 };

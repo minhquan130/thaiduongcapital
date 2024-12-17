@@ -1,25 +1,34 @@
-import React from 'react';
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navigation = () => {
+  const location = useLocation();
+
   const menuItems = [
-    { name: 'Home', href: '#' },
-    { name: 'Our firm', href: '#' },
-    { name: 'Products & Service', href: '#' },
-    { name: 'News & Article', href: '#' },
-    { name: 'Careers', href: '#' },
-    { name: 'Contact us', href: '#' }
+    { name: "Home", href: "/" },
+    { name: "Our firm", href: "/about" },
+    { name: "Products & Service", href: "/products" },
+    { name: "News & Article", href: "/news" },
+    { name: "Careers", href: "/careers" },
+    { name: "Contact us", href: "/contact" },
   ];
 
+  const getLinkClass = (href) => {
+    return location.pathname === href
+      ? 'text-white bg-[#f99d20]'
+      : 'text-gray-600 hover:text-white hover:bg-[#f99d20]';
+  };
+
   return (
-    <nav className="hidden md:flex space-x-3">
+    <nav className="hidden md:flex space-x-3 ">
       {menuItems.map((item) => (
-        <a
+        <Link
           key={item.name}
-          href={item.href}
-          className="text-gray-600 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium transition-colors"
+          to={item.href}
+          className={`px-2 py-1 rounded-md text-base font-medium transition-colors ${getLinkClass(item.href)}`}
         >
           {item.name}
-        </a>
+        </Link>
       ))}
     </nav>
   );

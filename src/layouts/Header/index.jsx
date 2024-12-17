@@ -1,5 +1,4 @@
 import React from "react";
-import "./Header.scss";
 import TopHeader from "./TopHeader";
 import MainHeader from "./MainHeader";
 
