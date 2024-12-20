@@ -17,7 +17,7 @@ const MainHeader = () => {
             <Link 
             to={''}
             className=" w-[566.92913386px] h-[70.299212598px]"
-            style={{backgroundImage: `url('${Logoimage}')`, backgroundPosition: '-10px -704px', backgroundSize: 'cover'}}
+            style={{backgroundImage: `url('${Logoimage}')`, backgroundPosition: '-28px -704px', backgroundSize: 'cover'}}
             >
               {/* <img src={Logoimage} alt="logo"/> */}
               <span className="hidden ml-2 text-xl font-bold text-gray-800">
