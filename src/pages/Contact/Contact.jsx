@@ -2,7 +2,7 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div className="container mx-auto px-6 py-8">
       <h1 className="text-4xl font-bold text-gray-900 mb-8">Contact Us</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
@@ -53,15 +53,17 @@ function Contact() {
           <p className="text-gray-600 mb-4">
             Thai Duong Capital
             <br />
-            Ho Chi Minh City, Vietnam
+            Unit 28-10, 28th Floor, Petroland Tower, 12 Tan Trao, Tan Phu Ward, District 7, Ho Chi Minh City, Vietnam
           </p>
           <h2 className="text-2xl font-semibold text-gray-900 mb-4 mt-8">
             Contact Information
           </h2>
           <p className="text-gray-600">
-            Email: info@thaiduongcapital.com
+            Phone: +84-28-54160779
             <br />
-            Phone: +84 xxx xxx xxx
+            Fax: +84-28-54160780
+            <br />
+            Email: info@thaiduongcapital.com.vn
           </p>
         </div>
       </div>
