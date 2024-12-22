@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
 
 function Home() {
-  const newsItems = Array.from({ length: 3 }, (_, index) => ({
-    id: index,
-    title: `Economic Update ${index + 1}`,
-    description: "Latest economic indicators and their impact on investments.",
-    imageUrl: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-    date: "March 5, 2024",
-  }));
+  // const newsItems = Array.from({ length: 3 }, (_, index) => ({
+  //   id: index,
+  //   title: `Economic Update ${index + 1}`,
+  //   description: "Latest economic indicators and their impact on investments.",
+  //   imageUrl: "https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+  //   date: "March 5, 2024",
+  // }));
   return (
     <>
       <div

@@ -135,7 +135,7 @@ function About() {
               </>
             ))}
           {indexAbout === 2 && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {arrTags[indexAbout].content.map((ct, i) => (
                 <div className="bg-slate-100 p-4 rounded-lg">
                   <h4 className="font-bold">{ct.username}</h4>
