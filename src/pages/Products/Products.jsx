@@ -42,8 +42,8 @@ function Products() {
       <h1 class="text-4xl font-bold text-gray-900 mb-8">
         Products &amp; Services
       </h1>
-      <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-3 bg-slate-50 p-4 rounded-lg">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
+        <div className="lg:col-span-3 bg-slate-50 p-4 rounded-lg">
           <ul className="flex flex-col gap-2">
             {arrTabProducts.map((tag, index) => (
               <li
@@ -61,7 +61,7 @@ function Products() {
             ))}
           </ul>
         </div>
-        <div className="col-span-9">
+        <div className="lg:col-span-9">
           <h2 className="text-2xl font-bold">
             {arrTabProducts[indexProduct].title}
           </h2>

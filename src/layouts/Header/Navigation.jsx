@@ -20,12 +20,12 @@ const Navigation = () => {
   };
 
   return (
-    <nav className="hidden md:flex space-x-3 ">
+    <nav className="hidden lg:flex space-x-3">
       {menuItems.map((item) => (
         <Link
           key={item.name}
           to={item.href}
-          className={`px-2 py-1 rounded-md text-base font-medium transition-colors ${getLinkClass(item.href)}`}
+          className={`md:text-sm xl:text-base px-2 py-1 rounded-md text-base font-medium transition-colors ${getLinkClass(item.href)}`}
         >
           {item.name}
         </Link>

@@ -97,8 +97,8 @@ function About() {
   return (
     <div className="container mx-auto px-6 py-8">
       <h1 className="text-4xl font-bold text-gray-900 mb-8">Our Firm</h1>
-      <div className="grid grid-cols-12 gap-4">
-        <div className="col-span-3 bg-slate-50 p-4 rounded-lg">
+      <div className="grid lg:grid-cols-12 grid-cols-1 gap-4">
+        <div className="w-full lg:col-span-3 bg-slate-50 p-4 rounded-lg">
           <ul className="flex flex-col gap-2">
             {arrTags.map((tag, index) => (
               <li
@@ -116,7 +116,7 @@ function About() {
             ))}
           </ul>
         </div>
-        <div className="col-span-9">
+        <div className="lg:col-span-9">
           <h2 className="text-2xl font-bold">{arrTags[indexAbout].title}</h2>
           <br />
           {indexAbout === 0 &&

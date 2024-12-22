@@ -14,7 +14,6 @@ function News() {
     <div className="container mx-auto px-6 py-8">
       <h1 className="text-4xl font-bold text-gray-900 mb-8">News & Articles</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        {/* Use .map to render news items dynamically */}
         {newsItems.map((item) => (
           <div key={item.id} className="bg-white rounded-lg shadow-lg overflow-hidden">
             <img
