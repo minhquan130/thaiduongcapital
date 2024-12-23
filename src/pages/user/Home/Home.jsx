@@ -1,5 +1,5 @@
 import React from "react";
-import BannerImage from "../../assets/images/banner.png";
+import BannerImage from "../../../assets/images/banner.png";
 import { Link } from "react-router-dom";
 import { MoveRight } from "lucide-react";
 
@@ -23,10 +23,8 @@ function Home() {
         <div className="absolute inset-0 bg-[#1f2937] bg-opacity-75 text-white">
           <div className="container mx-auto px-6 mt-24">
             <h2 className="text-4xl font-bold">THAI DUONG CAPITAL</h2>
-            <p class="mt-6 text-xl text-gray-300 max-w-3xl">
-              An independent fund manager providing professional services in
-              fund and portfolio management and investment advisory in Vietnam
-              since 2009.
+            <p className="mt-6 text-xl text-gray-300 max-w-3xl">
+              THAI DUONG CAPITAL is an independent fund manager, incorporated in 2009, under a business license by State Securities Commission (SSC). The Company now is proving professional services in fund and portfolio management and investment advisory in Vietnam.
             </p>
             <Link
               to={"/about"}
@@ -38,53 +36,53 @@ function Home() {
         </div>
       </div>
 
-      
-      <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-          <div class="lg:text-center">
-            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-6">
+          <div className="lg:text-center">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
               About Thai Duong Capital
             </h2>
-            <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               Founded in 2009, Thai Duong Capital has established itself as a
               trusted independent fund manager in Vietnam.
             </p>
           </div>
-          <div class="mt-10">
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+          <div className="mt-10">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       Experience
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       Over a decade of experience in fund management and
                       investment advisory services.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       Expertise
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       Deep understanding of Vietnamese markets and investment
                       opportunities.
                     </p>
                   </div>
                 </div>
               </div>
-              <div class="pt-6">
-                <div class="flow-root bg-gray-50 rounded-lg px-6 pb-8">
-                  <div class="-mt-6">
-                    <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">
+              <div className="pt-6">
+                <div className="flow-root bg-gray-50 rounded-lg px-6 pb-8">
+                  <div className="-mt-6">
+                    <h3 className="mt-8 text-lg font-medium text-gray-900 tracking-tight">
                       Trust
                     </h3>
-                    <p class="mt-5 text-base text-gray-500">
+                    <p className="mt-5 text-base text-gray-500">
                       Licensed by State Securities Commission (SSC) with a
                       proven track record.
                     </p>
@@ -96,46 +94,46 @@ function Home() {
         </div>
       </section>
 
-      <section class="py-16 bg-gray-50">
-        <div class="container mx-auto px-6">
-          <div class="lg:text-center">
-            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-6">
+          <div className="lg:text-center">
+            <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
               Our Services
             </h2>
-            <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
               Comprehensive investment solutions tailored to your needs
             </p>
           </div>
-          <div class="mt-10">
-            <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
-              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <div class="px-6 py-8">
-                  <h3 class="text-lg font-medium text-gray-900">
+          <div className="mt-10">
+            <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div className="px-6 py-8">
+                  <h3 className="text-lg font-medium text-gray-900">
                     Fund Management
                   </h3>
-                  <p class="mt-4 text-base text-gray-500">
+                  <p className="mt-4 text-base text-gray-500">
                     Professional management of investment funds with a focus on
                     maximizing returns while managing risk.
                   </p>
                 </div>
               </div>
-              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <div class="px-6 py-8">
-                  <h3 class="text-lg font-medium text-gray-900">
+              <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div className="px-6 py-8">
+                  <h3 className="text-lg font-medium text-gray-900">
                     Portfolio Management
                   </h3>
-                  <p class="mt-4 text-base text-gray-500">
+                  <p className="mt-4 text-base text-gray-500">
                     Customized portfolio solutions designed to meet specific
                     investment objectives and risk tolerance.
                   </p>
                 </div>
               </div>
-              <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-                <div class="px-6 py-8">
-                  <h3 class="text-lg font-medium text-gray-900">
+              <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+                <div className="px-6 py-8">
+                  <h3 className="text-lg font-medium text-gray-900">
                     Investment Advisory
                   </h3>
-                  <p class="mt-4 text-base text-gray-500">
+                  <p className="mt-4 text-base text-gray-500">
                     Expert guidance and strategic advice for making informed
                     investment decisions in Vietnamese markets.
                   </p>

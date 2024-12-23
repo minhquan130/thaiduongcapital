@@ -42,7 +42,7 @@ function About() {
         },
         {
           username: "Mrs. Le Quynh Chi",
-          position: "CEO",
+          position: "CIO",
         },
         {
           username: "Dr. Martin Doan",
@@ -50,7 +50,7 @@ function About() {
         },
         {
           username: "Mr. Cao Duy Dong – Chief Strategist Officer",
-          position: "Mr. Cao Duy Dong – Chief Strategist",
+          position: "CEO",
         },
       ],
     },
@@ -127,17 +127,17 @@ function About() {
             ))}
           {indexAbout === 1 &&
             arrTags[indexAbout].content.map((ct, i) => (
-              <>
+              <div key={i}>
                 <h4 className="font-bold">{ct.title}</h4>
                 <p key={i} className="p-2">
                   {ct.description}
                 </p>
-              </>
+              </div>
             ))}
           {indexAbout === 2 && (
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               {arrTags[indexAbout].content.map((ct, i) => (
-                <div className="bg-slate-100 p-4 rounded-lg">
+                <div key={i} className="bg-slate-100 p-4 rounded-lg">
                   <h4 className="font-bold">{ct.username}</h4>
                   <p key={i} className="p-2">
                     {ct.position}
@@ -149,7 +149,7 @@ function About() {
           {indexAbout === 3 && (
             <div className="grid gap-2">
               {arrTags[indexAbout].content.map((ct, i) => (
-                <div className="bg-slate-100 p-4 rounded-lg">
+                <div key={i} className="bg-slate-100 p-4 rounded-lg">
                   <h4 className="font-bold">{ct.date + ": " + ct.title}</h4>
                   <div className="flex justify-between mt-4">
                     <div className="flex">

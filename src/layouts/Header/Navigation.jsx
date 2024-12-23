@@ -10,7 +10,7 @@ const Navigation = () => {
     { name: "Products & Service", href: "/products" },
     { name: "News & Article", href: "/news" },
     { name: "Careers", href: "/careers" },
-    { name: "Contact us", href: "/contact" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   const getLinkClass = (href) => {

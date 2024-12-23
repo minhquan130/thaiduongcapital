@@ -38,8 +38,8 @@ function Products() {
       : "hover:bg-[#f99d20] hover:text-white";
   };
   return (
-    <div class="container mx-auto px-6 py-8">
-      <h1 class="text-4xl font-bold text-gray-900 mb-8">
+    <div className="container mx-auto px-6 py-8">
+      <h1 className="text-4xl font-bold text-gray-900 mb-8">
         Products &amp; Services
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-4">
